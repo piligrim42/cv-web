@@ -19,11 +19,11 @@ camera.position.setX(-3);
 
 renderer.render(scene, camera);
 
-const geometry = new THREE.TorusGeometry(10, 3, 16, 100)
-const material = new THREE.MeshNormalMaterial({color: 0xd939f9});
-const torus = new THREE.Mesh(geometry, material);
+//const geometry = new THREE.TorusGeometry(10, 3, 16, 100)
+//const material = new THREE.MeshNormalMaterial({color: 0xd939f9});
+//const torus = new THREE.Mesh(geometry, material);
 
-scene.add(torus)
+//scene.add(torus)
 
 const pointLight = new THREE.PointLight(0xffffff)
 pointLight.position.set(5,5,5)
@@ -117,14 +117,14 @@ moveCamera();
 function animate() {
     requestAnimationFrame(animate);
 
-    torus.rotation.x += 0.01;
-    torus.rotation.y += 0.005;
-    torus.rotation.z += 0.01;
+    //torus.rotation.x += 0.01;
+    //torus.rotation.y += 0.005;
+    //torus.rotation.z += 0.01;
 
     mercury.rotation.x += 0.01;
 
-    me.rotation.x += 0.001;
-    me.rotation.y += 0.002;
+    me.rotation.x += 0.002;
+    me.rotation.y += 0.004;
     me.rotation.z += 0.002;
 
 
